@@ -1,7 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-console.log(upperCase)
 var lowerCase = "abcdefghijklmnopqrstuvwxyz".split("");
 var number = "0123456789".split("");
 var specialCharacters = "!@#$%^&*?".split("");
@@ -17,7 +16,6 @@ function generatePassword() {
   var characterQuantity = window.prompt("How many characters do you want your password to be?")
 
   var userChoiceOne = window.confirm("Do you want Upper Case letters in your password?");
-  console.log(userChoiceOne)
 
   var userChoiceTwo = window.confirm("Do you want to use Lower Case letters in your password?")
 
@@ -49,7 +47,7 @@ function generatePassword() {
     let randomIndex = getRandomNumber(0, masterSet.length -1);
     let randomChar = masterSet[randomIndex];
     builtPassword += randomChar;
-  
+    return builtPassword;
   }
 }
 
